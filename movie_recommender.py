@@ -5,6 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from fuzzywuzzy import process
 import numpy as np
 import requests
+import config
 
 # Initialize stemmer and vectorizer
 ps = PorterStemmer()
