@@ -41,7 +41,7 @@ def recommend(movie):
             print("Index out of bounds while recommending.")
 
 def get_movie_data(title):
-    API_KEY = '23fd07ad'
+    API_KEY = config.API_KEY
     BASE_URL = 'http://www.omdbapi.com/'
     response = requests.get(BASE_URL, params={'t': title, 'apikey': API_KEY})
     movie_data = response.json()
